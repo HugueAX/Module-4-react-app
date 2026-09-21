@@ -7,10 +7,12 @@ function App() {
   return (
     <div>
       {alertVisible && (
-        <Alert onClose={() => setAlertVisibility(false)}>My alert</Alert>
+        <Alert onClose={() => setAlertVisibility(false)}>
+          My favorite color is Green!
+        </Alert>
       )}
-      <Button color="primary" onClick={() => setAlertVisibility(true)}>
-        My Button
+      <Button color="secondary" onClick={() => setAlertVisibility(true)}>
+        Click to find out my favorite color
       </Button>
     </div>
   );
